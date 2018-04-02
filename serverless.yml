@@ -5,6 +5,11 @@ provider:
   runtime: nodejs6.10
   stage: dev
   region: us-east-1
+custom:
+  webpack:
+    webpackConfig: 'webpack.serverless.config.js'
+plugins:
+  - serverless-webpack
 functions:
   query:
     handler: lambda.handler
