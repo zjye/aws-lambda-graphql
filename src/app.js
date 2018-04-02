@@ -1,12 +1,9 @@
-'use strict';
-
-const express = require('express');
-const body_parser = require('body-parser');
-
-const expressGraphQL = require('express-graphql');
+import express from 'express';
+import body_parser from 'body-parser';
+import expressGraphQL from 'express-graphql';
 
 // let's import the schema file we just created
-const GraphQLSchema = require('./graphql/schema');
+import GraphQLSchema from './graphql/schema';
 
 
 const app = express();
@@ -23,5 +20,5 @@ app.use(
 	})
 );
 
-module.exports = app;
+export default app;
 

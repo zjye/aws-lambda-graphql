@@ -1,20 +1,17 @@
-'use strict';
-
-const GraphQL = require('graphql');
-const {
+import {
 	GraphQLList,
 	GraphQLString,
 	GraphQLNonNull,
-} = GraphQL;
+} from 'graphql';
 
 // import the Post type we created
-const PostType = require('../types/Post');
+import PostType from '../types/Post';
 
 // import the Post resolver we created
-const PostResolver = require('../resolvers/Post');
+import PostResolver from '../resolvers/Post';
 
 
-module.exports = {
+export default {
 
 	index() {
 		return {

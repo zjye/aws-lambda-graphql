@@ -1,15 +1,12 @@
-'use strict';
-
-const GraphQL = require('graphql');
-const {
+import {
 	GraphQLObjectType,
 	GraphQLString,
 	GraphQLID,
 	GraphQLInt,
-} = GraphQL;
+} from 'graphql';
 
 
-const PostType = new GraphQL.GraphQLObjectType({
+const PostType = new GraphQLObjectType({
 	name: 'Post',
 	description: 'Post Type, For all the posts present in Reddit.',
 
@@ -50,5 +47,5 @@ const PostType = new GraphQL.GraphQLObjectType({
 });
 
 
-module.exports = PostType;
+export default PostType;
 

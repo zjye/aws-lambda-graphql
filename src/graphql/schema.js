@@ -1,14 +1,9 @@
-'use strict';
-
-const GraphQL = require('graphql');
-const {
+import {
 	GraphQLObjectType,
 	GraphQLSchema,
-} = GraphQL;
+} from 'graphql';
+import PostQuery from './queries/Post';
 
-
-// import the user query file we created
-const PostQuery = require('./queries/Post');
 
 
 // lets define our root query
@@ -21,8 +16,7 @@ const RootQuery = new GraphQLObjectType({
 });
 
 
-// export the schema
-module.exports = new GraphQLSchema({
+export default new GraphQLSchema({
 	query: RootQuery,
 });
 

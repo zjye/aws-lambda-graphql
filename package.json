@@ -4,7 +4,8 @@
   "description": "GraphQL Application To Query Subreddits, Hosted on AWS Lambda",
   "main": "index.js",
   "scripts": {
-    "server": "node server.js"
+    "server": "node server.js",
+    "start": "nodemon server.js --exec babel-node --presets babel-preset-env"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,10 @@
     "express": "^4.15.2",
     "express-graphql": "^0.6.4",
     "graphql": "^0.9.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.17.3"
   }
 }

@@ -1,6 +1,4 @@
-'use strict';
-
-const axios = require('axios');
+import axios from 'axios';
 
 const PostsController = {
 
@@ -28,4 +26,4 @@ const PostsController = {
 
 }
 
-module.exports = PostsController;
+export default PostsController;
